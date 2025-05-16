@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interviews with freedom fighters and witnesses of Bangladesh's Liberation War">
+    <title>Interviews - Liberation War Archive</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Liberation War Archive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documents.html">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="interviews.html">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Oral History Interviews</h1>
+            <p class="lead">Listen to firsthand accounts from freedom fighters and witnesses of the Liberation War.</p>
+            
+            <!-- Search and Filter -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" id="interviewSearch" class="form-control" placeholder="Search interviews...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="interviewFilter">
+                        <option value="all">All Categories</option>
+                        <option value="freedom-fighters">Freedom Fighters</option>
+                        <option value="civilians">Civilians</option>
+                        <option value="politicians">Political Leaders</option>
+                        <option value="military">Military Personnel</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interviews Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Featured Interview -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../assets/images/featured-interview.jpg" alt="Featured Interviewee" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="badge bg-primary mb-2">Featured</span>
+                                    <h2>Major General C R Dutta, Bir Uttam</h2>
+                                    <p class="text-muted">Sector Commander, Liberation War</p>
+                                    <p>Major General C R Dutta shares his experiences as a sector commander during the Liberation War, including strategic operations and key battles.</p>
+                                    <div class="interview-player mb-3">
+                                        <audio controls class="w-100">
+                                            <source src="../assets/interviews/featured-interview.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#transcriptModal">
+                                            View Transcript
+                                        </button>
+                                        <div>
+                                            <button class="btn btn-link" data-bs-toggle="tooltip" title="Download Audio">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                            <button class="btn btn-link" data-bs-toggle="tooltip" title="Share">
+                                                <i class="fas fa-share-alt"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Grid -->
+            <div class="row">
+                <!-- Interview Card 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../assets/images/interview1.jpg" alt="Interviewee" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h3 class="card-title h5 mb-1">Captain Mohiuddin Jahangir</h3>
+                                    <p class="text-muted mb-0">Freedom Fighter</p>
+                                </div>
+                            </div>
+                            <p class="card-text">A compelling account of guerrilla warfare tactics and the spirit of resistance during the Liberation War.</p>
+                            <div class="interview-player mb-3">
+                                <audio controls class="w-100">
+                                    <source src="../assets/interviews/interview1.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                <span class="text-muted">Duration: 45:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interview Card 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../assets/images/interview2.jpg" alt="Interviewee" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h3 class="card-title h5 mb-1">Dr. Nilima Ibrahim</h3>
+                                    <p class="text-muted mb-0">Civilian Witness</p>
+                                </div>
+                            </div>
+                            <p class="card-text">A moving testimony about the experiences of civilians during the war and the role of women in the liberation movement.</p>
+                            <div class="interview-player mb-3">
+                                <audio controls class="w-100">
+                                    <source src="../assets/interviews/interview2.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                <span class="text-muted">Duration: 38:15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Interview navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Transcript Modal -->
+    <div class="modal fade" id="transcriptModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Interview Transcript</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="transcript-content" style="max-height: 400px; overflow-y: auto;">
+                        <h6>Major General C R Dutta, Bir Uttam</h6>
+                        <p class="text-muted">Recorded on: July 15, 1995</p>
+                        <hr>
+                        <p><strong>Interviewer:</strong> Can you tell us about your role during the Liberation War?</p>
+                        <p><strong>C R Dutta:</strong> [Add transcript content here]</p>
+                        <!-- Add more transcript content -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Download Transcript</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Liberation War Archive</h5>
+                    <p>Preserving the history of Bangladesh's independence struggle.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="documents.html" class="text-white">Documents</a></li>
+                        <li><a href="interviews.html" class="text-white">Interviews</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> info@liberationwararchive.org</li>
+                        <li><i class="fas fa-phone me-2"></i> +880 2-XXXXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Liberation War Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html> 

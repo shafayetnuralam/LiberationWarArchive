@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historical documents from Bangladesh's Liberation War - Official records, treaties, and correspondence">
+    <title>Documents - Liberation War Archive</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Liberation War Archive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="documents.html">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interviews.html">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Historical Documents</h1>
+            <p class="lead">Explore official records, treaties, and correspondence from the Liberation War period.</p>
+            
+            <!-- Search and Filter -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" id="documentSearch" class="form-control" placeholder="Search documents...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="documentFilter">
+                        <option value="all">All Categories</option>
+                        <option value="treaties">Treaties</option>
+                        <option value="declarations">Declarations</option>
+                        <option value="correspondence">Official Correspondence</option>
+                        <option value="reports">Military Reports</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Documents Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Document Card 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="document-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3>Declaration of Independence</h3>
+                                <p class="text-muted">March 26, 1971</p>
+                            </div>
+                            <span class="badge bg-primary">Declaration</span>
+                        </div>
+                        <p>The official declaration of independence by Sheikh Mujibur Rahman, marking the beginning of Bangladesh's Liberation War.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#documentModal1">
+                                View Document
+                            </a>
+                            <div>
+                                <button class="btn btn-link" data-bs-toggle="tooltip" title="Download PDF">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="btn btn-link" data-bs-toggle="tooltip" title="Share">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Card 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="document-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3>Surrender Document</h3>
+                                <p class="text-muted">December 16, 1971</p>
+                            </div>
+                            <span class="badge bg-primary">Treaty</span>
+                        </div>
+                        <p>The instrument of surrender signed by Pakistani forces, marking the end of the Liberation War and the birth of Bangladesh.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#documentModal2">
+                                View Document
+                            </a>
+                            <div>
+                                <button class="btn btn-link" data-bs-toggle="tooltip" title="Download PDF">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="btn btn-link" data-bs-toggle="tooltip" title="Share">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more document cards here -->
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Document navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Document Modal -->
+    <div class="modal fade" id="documentModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Declaration of Independence</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="about:blank" title="Document Viewer" allowfullscreen></iframe>
+                    </div>
+                    <div class="mt-3">
+                        <h6>Document Details:</h6>
+                        <ul class="list-unstyled">
+                            <li><strong>Date:</strong> March 26, 1971</li>
+                            <li><strong>Author:</strong> Sheikh Mujibur Rahman</li>
+                            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+                            <li><strong>Category:</strong> Declaration</li>
+                        </ul>
+                        <p class="mt-3">Historical Context: [Add detailed description here]</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Liberation War Archive</h5>
+                    <p>Preserving the history of Bangladesh's independence struggle.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="documents.html" class="text-white">Documents</a></li>
+                        <li><a href="interviews.html" class="text-white">Interviews</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> info@liberationwararchive.org</li>
+                        <li><i class="fas fa-phone me-2"></i> +880 2-XXXXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Liberation War Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html> 

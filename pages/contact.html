@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Liberation War Archive - Submit materials, provide feedback, or get in touch">
+    <title>Contact Us - Liberation War Archive</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Liberation War Archive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documents.html">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interviews.html">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead">Share your stories, contribute materials, or get in touch with our team.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Get in Touch</h2>
+                            <div class="mb-4">
+                                <h3 class="h6">Address</h3>
+                                <p class="text-muted">
+                                    Liberation War Archive<br>
+                                    123 Freedom Road<br>
+                                    Dhaka 1000, Bangladesh
+                                </p>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="h6">Contact Details</h3>
+                                <p class="text-muted">
+                                    <i class="fas fa-phone me-2"></i> +880 2-XXXXXXXX<br>
+                                    <i class="fas fa-envelope me-2"></i> info@liberationwararchive.org
+                                </p>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="h6">Office Hours</h3>
+                                <p class="text-muted">
+                                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                    Saturday: 10:00 AM - 2:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="h6">Follow Us</h3>
+                                <div class="social-links">
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Send Us a Message</h2>
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a subject.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="contribution" class="form-label">Contribution Type</label>
+                                    <select class="form-select" id="contribution">
+                                        <option value="">Select a contribution type</option>
+                                        <option value="document">Historical Document</option>
+                                        <option value="photo">Photograph</option>
+                                        <option value="interview">Interview/Testimony</option>
+                                        <option value="artifact">Physical Artifact</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="file" class="form-label">Attach Files</label>
+                                    <input type="file" class="form-control" id="file" multiple>
+                                    <div class="form-text">
+                                        You can upload multiple files (max. 10MB each). Supported formats: PDF, JPG, PNG, MP3, MP4
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="consent" required>
+                                    <label class="form-check-label" for="consent">
+                                        I agree to the <a href="#">terms and conditions</a> and give consent for my contribution to be used in the archive. *
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                    <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h4 mb-4">Our Location</h2>
+            <div class="ratio ratio-21x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2775580162267!2d90.39444231441785!3d23.746735084589013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bd5c3d4c77%3A0x5d2e5c9bdf2e3d3a!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1645000000000!5m2!1sen!2sus" 
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Liberation War Archive</h5>
+                    <p>Preserving the history of Bangladesh's independence struggle.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="documents.html" class="text-white">Documents</a></li>
+                        <li><a href="interviews.html" class="text-white">Interviews</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> info@liberationwararchive.org</li>
+                        <li><i class="fas fa-phone me-2"></i> +880 2-XXXXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Liberation War Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html> 
