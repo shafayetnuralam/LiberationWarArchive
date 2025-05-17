@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
-    padding-top: 76px; /* Account for fixed navbar */
+    padding-top: 5px; /* Account for fixed navbar */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
     background: linear-gradient(rgba(0, 106, 78, 0.8), rgba(244, 42, 65, 0.8)),
                 url('../assets/images/hero-bg.jpg') center/cover no-repeat;
-    height: 80vh;
+    height: 90vh;
     min-height: 500px;
     position: relative;
 }
@@ -264,7 +264,7 @@ footer a:hover {
 
 /* Section Headings */
 h2 {
-    color: var(--primary-color);
+    color: red;
     position: relative;
     padding-bottom: 10px;
 }
